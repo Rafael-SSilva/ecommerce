@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/user/css/base.css' %}">
+    <title>E-commerce - {% block title %} {% endblock title%}</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <div class="profile">
+                <img class='icon-size' src="{% static '/user/images/user_icon.png' %}" alt="">
+                <span>My profile</span>
+            </div>
+            <div class="cart">
+                <img class='icon-size' src="{% static '/user/images/cart_icon.png' %}" alt="">
+                <span class="cart-items">1</span>
+            </div>
+
+        </div>
+        <div class="categories">
+            
+        </div>
+        <div class="clear"></div>
+    </header>
+    
+    <main>
+        <aside class="side-filter">
+            <div class="gender">
+
+            </div>
+
+            <div class="product-type">
+                
+            </div>
+        </aside>
+        <div class="content">
+            {% block body %}
+            {% endblock body %}
+        </div>
+    </main>
+
+</body>
+</html>

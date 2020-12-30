@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.header{
+    width: 100%;
+    height: 140px;
+    background-color: rgba(23, 117, 204, 0.67);
+}
+
+.header-container{
+    float: right;
+    margin: 20px 50px 10px 30px;
+}
+
+
+.header-container .profile{
+    display: inline-block;
+    margin: 0 15px 0 15px;
+
+}
+
+.header-container .cart {
+    display: inline-block;
+}
+
+.icon-size{
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+.cart-items{
+    font-size: 12px;
+
+}
+
+.header-container span{
+    position: relative;
+    top: -2px;
+    left: -4px;
+    cursor: pointer;
+
+}
+
+.categories{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+}
+
+.side-filter{
+    float: left;
+    margin: 20px;
+    width: 250px;
+    height: 700px;
+    background: rgba(197, 204, 211, 0.67);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+.side-filter > div{
+    display: inline-block;
+    margin: 20px;
+    width: 80%;
+    padding-bottom: calc(700px / 2 - 40px);
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.content{
+    float: left;
+    margin-top: 20px;
+    /* background-color: green; */
+    width: calc(100% - 310px);
+    padding: 20px;
+}
+
+.item-card{
+    float: left;
+    width: 33.3%;
+    max-width: 500px;
+    min-height: 550px;
+    display: block;
+    position: relative;
+    left: -1px;
+    text-align: center;
+    border-right: 1px solid #C5CCD3;
+    border-bottom: 1px solid #C5CCD3;
+    /* background-color: green; */
+}
+
+
+.item-card:nth-of-type(3n ){
+    border-right: none;
+} 
+
+.item-card img{
+    width: 100%;
+    max-width: 400px;
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+
+
+
+@media screen and (max-width:1024px){
+    .item-card{
+        width: 50%;
+    }
+    
+    .item-card:nth-of-type(3n ){
+        border-right: 1px solid black;
+    } 
+    
+    .item-card:nth-of-type(2n ){
+        border-right: none;
+    } 
+    
+}
