@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -61,6 +63,10 @@ html, body{
     background: #FFFFFF;
 }
 
+aside {
+    display: none;
+}
+
 .side-filter{
     float: left;
     margin: 20px;
@@ -84,20 +90,23 @@ html, body{
 
 
 .content{
-    float: left;
-    margin-top: 20px;
+    /* float: left; */
+    /* margin-top: 20px; */
     /* background-color: green; */
-    width: calc(100% - 310px);
-    padding: 20px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 50px auto;
+    /* padding: 20px; */
 }
 
 .item-card{
     float: left;
     width: 33.3%;
     max-width: 500px;
-    min-height: 550px;
+    min-height: 500px;
     display: block;
     position: relative;
+    text-align: left;
     left: -1px;
     text-align: center;
     border-right: 1px solid #C5CCD3;
@@ -112,9 +121,30 @@ html, body{
 
 .item-card img{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     /* border-right: 1px solid black;
     border-bottom: 1px solid black; */
+}
+
+.item-card .prod-description{
+    text-align: left;
+    padding: 0 20px;
+}
+
+.item-card .prod-description > a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(66, 65, 65);
+}
+
+.item-card .prod-description del{
+    color: grey;
+}
+
+
+.item-card .prod-description .price-content .price{
+    font-size: 22px;
+    font-weight: 600;
 }
 
 
