@@ -13,7 +13,7 @@ html, body{
     /* background-color: rgba(23, 117, 204, 0.67); */
 }
 
-.form-container{
+.form-container, .wrapper{
     width: 95%;
     max-width: 540px;
     height: 380px;
@@ -82,4 +82,16 @@ form input[type=submit]{
 .form-group input{
     border: 0;
     border-radius: 10px;
+}
+
+.form-errors{
+    width: 100%;
+    padding-top: 8px;
+    border-radius: 20px;
+}
+
+.form-errors p{
+    display: block;
+    font-size: 20px;
+    color: red;
 }

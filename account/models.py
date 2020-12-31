@@ -54,3 +54,6 @@ class Account(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
+
+    class META:
+        db_table = 'account'
